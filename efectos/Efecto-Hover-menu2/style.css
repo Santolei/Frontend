@@ -1,0 +1,73 @@
+/* POPPINS GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', Sans-serif;
+}
+
+.container-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	min-height: 100vh;
+	background: #000;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	position: relative;
+	display: block;
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	font-size: 4em;
+	font-weight: 900;
+	text-decoration: none;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+ul li a:hover{
+	color: #fff;
+	-webkit-text-stroke: 1px #000;
+	transition: .5s;
+}
+
+ul li a:before,
+ul li a:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s;
+}
+
+ul li a:hover:before {
+	color: #f00;
+	z-index: 1;
+	-webkit-text-stroke: 1px #000;
+	transform: translate(10px, -10px);
+}
+
+ul li a:hover:after {
+	color: #0ff;
+	z-index: 2;
+	-webkit-text-stroke: 1px #000;
+	transform: translate(20px, -20px);
+}
+
+.git-logo {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
+    text-align: center;
+}
