@@ -71,3 +71,9 @@ ul li a:hover:after {
     filter: invert(100%);
     text-align: center;
 }
+
+@media screen and (max-width: 550px){
+	ul li a {
+		font-size: 2.5em;
+	}
+}
