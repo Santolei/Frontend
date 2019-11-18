@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cambiando background-color en hover</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="container-menu">	
+		<ul>
+			<li onMouseOver="javascript:changeColorBg('ff6b6b')"
+				onmouseOut="javascript:changeColorBg('transparent')" 
+			><a href="#">Home</a></li>
+			<li onMouseOver="javascript:changeColorBg('48dbfb')"
+				onmouseOut="javascript:changeColorBg('transparent')"><a href="#">Nosotros</a></li>
+			<li onMouseOver="javascript:changeColorBg('50ff66')"
+				onmouseOut="javascript:changeColorBg('transparent')"><a href="#">Servicios</a></li>
+			<li onMouseOver="javascript:changeColorBg('feca57')"
+				onmouseOut="javascript:changeColorBg('transparent')"><a href="#">Trabajos</a></li>
+			<li onMouseOver="javascript:changeColorBg('f368e0')"
+				onmouseOut="javascript:changeColorBg('transparent')"><a href="#">Contacto</a></li>
+		</ul>
+		<a href="#"><img src="github.png" alt="Verlo en Github"></a>
+	</div>
+		
+	<script>
+		//Función que cambia el color del fondo
+		function changeColorBg(color){
+			document.bgColor = color;	
+		}
+	</script>
+</body>
+</html>
